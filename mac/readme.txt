@@ -1,0 +1,1 @@
+If you are using Chrome version 102, you can directly run the "autoTest.py" under the "mac" folder; otherwise, you must replace the webdriver with the correct version before running.

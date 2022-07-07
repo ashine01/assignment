@@ -31,7 +31,7 @@ In order to make sure the "Warranty checking function" works correctly on most b
 
 
 
-* Make sure the webdriver and the "autoTest.py" are in the same directory. If you are using Windows, copy both "chromedriver.exe" and "msedgedriver.exe". If you are using macOS, copying "chromedriver" is enough.
+* Make sure the webdriver and the "autoTest.py" are in the same directory. If you are using Windows, please copy both "chromedriver.exe" and "msedgedriver.exe". If you are using macOS, copying "chromedriver" is enough.
 (Note: It's no need to download webdriver for Safari browser. Instead, you have to check if the "safaridriver" is correctly under "/usr/bin/" directory.)
 
 * For macOS users, enable the "Remote Automation" of Safari browser is necessary. Please follow the screenshot below to enable it.
@@ -78,4 +78,4 @@ The html report will be created in the same directory. The report looks like the
 
 ## Defect Report
 
-The defect reports are created in the "defect_report" folder. The screenshot and testing logs are all attached.
+The defect reports are created in the "defect_report" folder and written in Word file. The screenshot and testing logs are all attached.

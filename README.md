@@ -31,7 +31,7 @@ In order to make sure the "Warranty checking function" works correctly on most b
 
 
 
-* Make sure the webdriver and the "autoTest.py" are in the same directory. If you are using Windows, please copy both "chromedriver.exe" and "msedgedriver.exe". If you are using macOS, copying "chromedriver" is enough.
+* Make sure the webdriver and the "autoTest.py" are in the same directory. If you are using Windows, please download both "chromedriver.exe" and "msedgedriver.exe". If you are using macOS, downloading "chromedriver" is enough.
 (Note: It's no need to download webdriver for Safari browser. Instead, you have to check if the "safaridriver" is correctly under "/usr/bin/" directory.)
 
 * For macOS users, enable the "Remote Automation" of Safari browser is necessary. Please follow the screenshot below to enable it. If the "Develop" menu is not shown in the menu bar, please go to Safari -> Preferences -> Advanced to enable the Develop menu.
@@ -71,14 +71,14 @@ python autoTest.py
 ```
 ./autoTest.py
 ```
-* For macOS users, if the warnning message "macOS cannot verify the developer of 'chromedriver'," shows, please press "Open" button to continue running.
+* For macOS users, if the warnning message "macOS cannot verify the developer of 'chromedriver'" shows, please press "Open" button to continue running.
 
 
 * After running the command above, the auto test will start. The test report will be created in HTML format when the test is finished.
 
 ## Test Report
 
-The html report will be created in the same directory. The report looks like the picture below:
+The HTML report will be created in the same directory. The report looks like the picture below:
 
 ![](img/p1.png)
 

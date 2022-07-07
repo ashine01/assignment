@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import os
 import sys
 import json
@@ -163,8 +165,8 @@ if __name__ == "__main__":
 		suite.addTest(WarrantyCheckSafari("testValidSerialNumber"))
 
 	timeFormat = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
-	report_title = "Warranty Test"
-	desc = "Test if the 'Warranty Checking' functional"
+	report_title = "Warranty Checking Function Test"
+	desc = "Test if the Warranty Checking function works on all platforms and browsers"
 	report_file = f"test_report_{timeFormat}.html"
 
 	with open(report_file, 'wb') as report:

@@ -1,6 +1,8 @@
 # AutoTest
 
-AutoTest applied Selenium automated testing framework to validate web applications across different browsers and platforms. Based on the designed test strategy, AutoTest will create an HTML test report when the test is done.
+AutoTest applied Selenium automated testing framework to validate web applications across different browsers and platforms. Based on the designed test strategy, AutoTest will create an HTML test report when the test is done. 
+
+Before running the test, please use correct webdrivers and ensure all python dependencies are installed. Follow the instruction below to set up the testing enviroment.
 
 ## Test Strategy
 
@@ -17,7 +19,9 @@ For the Test Scope (Warranty checking input), the following test cases are desig
 In order to make sure the "Warranty checking function" works correctly on most browsers, all test cases above will run on Google Chrome, Microsoft Edge and Safari respectively.
 
 ## Enviroment Setup
-* Check the browser version and download the corresponding webdriver. You can find the corresponding webdriver under "webdriver" folder or download them from the following links instead.
+
+### Download Webdrivers
+* Check the browser version and download the corresponding webdrivers. Please find and download the corresponding webdrivers from the following links directly.
 
 | Browser  | Links                                                                 |
 |----------|-----------------------------------------------------------------------|
@@ -30,15 +34,19 @@ In order to make sure the "Warranty checking function" works correctly on most b
 * Make sure the webdriver and the "autoTest.py" are in the same directory. If you are using Windows, copy both "chromedriver.exe" and "msedgedriver.exe". If you are using macOS, copying "chromedriver" is enough.
 (Note: It's no need to download webdriver for Safari browser. Instead, you have to check if the "safaridriver" is correctly under "/usr/bin/" directory.)
 
+* For macOS users, enable the "Remote Automation" of Safari browser is necessary. Please follow the screenshot below to enable it.
+
+![](img/p2.png)
+
+### Install Dependencies
+
 * All required dependencies are included in the "requirements.txt" file. Please find the "requirements.txt" file under "windows" and "mac" folder respectively. You can easily install the required Python dependencies by the command below:
 
 ```
 pip install -r requirements.txt
 ```
 
-* For macOS users, enable the "Remote Automation" of Safari browser is necessary. Please follow the screenshot below to enable it.
 
-![](img/p2.png)
 
 ## Run The Test
 
@@ -46,24 +54,28 @@ pip install -r requirements.txt
 
 * Make sure the webdrivers(chromedriver and msedgedriver), autoTest.py, HTMLTestRunner_PY3.py and ValidSerial.json are in the same directory.
 
-* For Windows users, you can run the "autoTest.py" under the "windows" folder directly.(Remenber to replace the webdriver with the correct version before running)
+* For Windows users, you can execute the "python autoTest.py" under the "windows" folder directly.(Remenber to replace the webdriver with the correct version before running)
 
 * For MacOS users, please operate under the "mac" folder. If you are using Chrome version 102, you can directly run the "autoTest.py" under the "mac" folder; otherwise, you must replace the webdriver with the correct version before running.
 
 * Run the "autoTest.py":
 
 ```
-./autoTest.py
-```
-or
-
-```
 python autoTest.py
 ```
-* After running the command above, the auto test will start. The test report will be created in html format when the test is finished.
+* If you are using macOS, you can also use the command below:
+
+```
+./autoTest.py
+```
+* After running the command above, the auto test will start. The test report will be created in HTML format when the test is finished.
 
 ## Test Report
 
 The html report will be created in the same directory. The report looks like the picture below:
 
 ![](img/p1.png)
+
+## Defect Report
+
+The defect reports are created in the "defect_report" folder. The screenshot and testing logs are all attached.

@@ -74,7 +74,7 @@ python autoTest.py
 * For macOS users, if the warnning message "macOS cannot verify the developer of 'chromedriver'" shows, please press "Open" button to continue running.
 
 
-* After running the command above, the auto test will start. The test report will be created in HTML format when the test is finished.
+* After running the command above, the autoTest will start. The test report will be created in HTML format when the test is finished.
 
 ## Test Report
 
